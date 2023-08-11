@@ -1,3 +1,4 @@
 streamlit
 yt_dlp
+gcsfs
 git+https://github.com/streamlit/files-connection
