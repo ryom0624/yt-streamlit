@@ -31,7 +31,7 @@ if st.button('ダウンロード開始'):
         st.write(f"投稿日時: {res['upload_date']}")
         st.write(f"投稿者: {res['uploader']}")
         st.write(f"再生回数: {res['view_count']}")
-        st.write(f"いいね数: {res['like_count']}")
+        # st.write(f"いいね数: {res['like_count']}")
 
         with open('downloaded_video.mp4', 'rb') as video_file:
             # ファイルをGCSに書き込む
