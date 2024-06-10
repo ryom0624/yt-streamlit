@@ -14,7 +14,8 @@ ydl_opts = {
 }
 
 # FilesConnectionを使用してGCSに接続
-conn = st.experimental_connection('gcs', type=FilesConnection)
+# conn = st.experimental_connection('gcs', type=FilesConnection)
+conn = st.connection('gcs', type=FilesConnection)
 gcs_bucket = "yt-download-streamlit"
 
 # ユーザーからURLの入力を受け付ける
