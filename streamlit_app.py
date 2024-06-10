@@ -15,8 +15,10 @@ ydl_opts = {
 
 # FilesConnectionを使用してGCSに接続
 # conn = st.experimental_connection('gcs', type=FilesConnection)
-conn = st.connection('gcs', type=FilesConnection)
-gcs_bucket = "yt-download-streamlit"
+# conn = st.connection('gcs', type=FilesConnection)
+# gcs_bucket = "yt-download-streamlit"
+
+st.title("YouTube動画ダウンロードアプリ")
 
 # ユーザーからURLの入力を受け付ける
 video_url = st.text_input("YouTubeの動画URLを入力してください:", placeholder="https://www.youtube.com/watch?v=XXXXXXXXXXX")
